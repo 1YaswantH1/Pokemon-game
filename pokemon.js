@@ -48,3 +48,18 @@ document.addEventListener('keydown', function (e) {
         catch1.click()
     }
 })
+document.addEventListener('DOMContentLoaded', () => {
+    const nameContainer = document.getElementById('name-container');
+    adjustFontSize(nameContainer);
+});
+
+function adjustFontSize(element) {
+    const maxWidth = 256; 
+    let fontSize = parseInt(window.getComputedStyle(element).fontSize, 10);
+    const nameLength = element.textContent.length;
+
+    while (element.scrollWidth > maxWidth && fontSize > 1) {
+        fontSize--;
+        element.style.fontSize = fontSize + 'px';
+    }
+}
