@@ -39,8 +39,6 @@ body {
     border-width: 4px;
     width: 400px;
     padding: 5px;
-
-
 }
 
 .pokemonhunt img {
@@ -88,7 +86,7 @@ button:hover {
 }
 
 body {
-    background-color: #fcbf49;
+    background-color: #e9eb9e;
 }
 
 .your_pokemon {
@@ -106,17 +104,17 @@ body {
 
 .your_pokemon p {
     position: relative;
-
     display: inline;
 
 }
 
 .name1 {
     font-family: monospace;
-    font-style: large;
     font-weight: bolder;
-
-    font-size: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 256px;
+    font-size: 30px; 
 }
 
 .item {
@@ -132,4 +130,11 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
 
+}
+.dicision{
+    font-weight: bolder;
+    font-size: 5em;
+    width: 400px;
+    display:flex;
+    flex-wrap: wrap;
 }
